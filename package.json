@@ -1,0 +1,51 @@
+{
+    "name": "numberkong-cli",
+    "version": "0.0.1",
+    "description": "Command line interface for numberkong",
+    "main": "bin/index.js",
+    "types": "bin/index.d.ts",
+    "bin": {
+        "numberkong-cli": "./bin/index.js"
+    },
+    "scripts": {
+        "start": "node bin/index.js",
+        "prepublish": "tsc",
+        "watch": "tsc -w",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/benjamin-fukdawurld/NumberKong-cli.git"
+    },
+    "keywords": [
+        "Numberzilla",
+        "puzzle",
+        "game",
+        "number"
+    ],
+    "author": "Benjamin Fukdawurld",
+    "license": "Apache-2.0",
+    "bugs": {
+        "url": "https://github.com/benjamin-fukdawurld/NumberKong-cli/issues"
+    },
+    "homepage": "https://github.com/benjamin-fukdawurld/NumberKong-cli#readme",
+    "devDependencies": {
+        "@types/node": "^15.3.0",
+        "@typescript-eslint/eslint-plugin": "^4.23.0",
+        "@typescript-eslint/parser": "^4.23.0",
+        "eslint": "^7.26.0",
+        "eslint-config-google": "^0.14.0",
+        "ts-node": "^9.1.1",
+        "typescript": "^4.2.4"
+    },
+    "dependencies": {
+        "@types/ansi-escape-sequences": "^4.0.0",
+        "@types/prompts": "^2.0.11",
+        "ansi-escape-sequences": "^6.0.1",
+        "boxen": "^5.0.1",
+        "chalk": "^4.1.1",
+        "numberkong": "^1.0.0",
+        "prompts": "^2.4.1",
+        "yargs": "^17.0.1"
+    }
+}
